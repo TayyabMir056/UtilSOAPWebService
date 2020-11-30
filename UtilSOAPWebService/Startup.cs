@@ -26,6 +26,12 @@ namespace UtilSOAPWebService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddHttpClient("webService", c =>
+            {
+                c.BaseAddress = new Uri("https://moewebservice.azurewebsites.net/WebService1.asmx");
+                c.DefaultRequestHeaders.Add("Host", "moewebservice.azurewebsites.net");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
