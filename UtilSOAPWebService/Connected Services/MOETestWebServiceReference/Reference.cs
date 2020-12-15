@@ -7,22 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServiceReference
+namespace MOETestWebServiceReference
 {
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.WebService1Soap")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MOETestWebServiceReference.WebService1Soap")]
     public interface WebService1Soap
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getEduYear", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ServiceReference.getEduYearResponse> getEduYearAsync(ServiceReference.getEduYearRequest request);
+        System.Threading.Tasks.Task<MOETestWebServiceReference.getEduYearResponse> getEduYearAsync(MOETestWebServiceReference.getEduYearRequest request);
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
     public partial class UserCredentials
@@ -62,7 +62,7 @@ namespace ServiceReference
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
     public partial class getEduYearResponseGetEduYearResult
@@ -102,53 +102,53 @@ namespace ServiceReference
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="getEduYear", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
     public partial class getEduYearRequest
     {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://tempuri.org/")]
-        public ServiceReference.UserCredentials UserCredentials;
+        public MOETestWebServiceReference.UserCredentials UserCredentials;
         
         public getEduYearRequest()
         {
         }
         
-        public getEduYearRequest(ServiceReference.UserCredentials UserCredentials)
+        public getEduYearRequest(MOETestWebServiceReference.UserCredentials UserCredentials)
         {
             this.UserCredentials = UserCredentials;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="getEduYearResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
     public partial class getEduYearResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference.getEduYearResponseGetEduYearResult getEduYearResult;
+        public MOETestWebServiceReference.getEduYearResponseGetEduYearResult getEduYearResult;
         
         public getEduYearResponse()
         {
         }
         
-        public getEduYearResponse(ServiceReference.getEduYearResponseGetEduYearResult getEduYearResult)
+        public getEduYearResponse(MOETestWebServiceReference.getEduYearResponseGetEduYearResult getEduYearResult)
         {
             this.getEduYearResult = getEduYearResult;
         }
     }
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
-    public interface WebService1SoapChannel : ServiceReference.WebService1Soap, System.ServiceModel.IClientChannel
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    public interface WebService1SoapChannel : MOETestWebServiceReference.WebService1Soap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.1")]
-    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<ServiceReference.WebService1Soap>, ServiceReference.WebService1Soap
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<MOETestWebServiceReference.WebService1Soap>, MOETestWebServiceReference.WebService1Soap
     {
         
         /// <summary>
@@ -185,16 +185,16 @@ namespace ServiceReference
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference.getEduYearResponse> ServiceReference.WebService1Soap.getEduYearAsync(ServiceReference.getEduYearRequest request)
+        System.Threading.Tasks.Task<MOETestWebServiceReference.getEduYearResponse> MOETestWebServiceReference.WebService1Soap.getEduYearAsync(MOETestWebServiceReference.getEduYearRequest request)
         {
             return base.Channel.getEduYearAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference.getEduYearResponse> getEduYearAsync(ServiceReference.UserCredentials UserCredentials)
+        public System.Threading.Tasks.Task<MOETestWebServiceReference.getEduYearResponse> getEduYearAsync(MOETestWebServiceReference.UserCredentials UserCredentials)
         {
-            ServiceReference.getEduYearRequest inValue = new ServiceReference.getEduYearRequest();
+            MOETestWebServiceReference.getEduYearRequest inValue = new MOETestWebServiceReference.getEduYearRequest();
             inValue.UserCredentials = UserCredentials;
-            return ((ServiceReference.WebService1Soap)(this)).getEduYearAsync(inValue);
+            return ((MOETestWebServiceReference.WebService1Soap)(this)).getEduYearAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
